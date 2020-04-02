@@ -23,8 +23,8 @@ videos = ""
 class YTHandler(ContentHandler):
 
     def __init__ (self):
-        self.inEntry = False
-        self.inContent = False
+        self.inEntry = False #Para saber si estamos dentro de entry
+        self.inContent = False #Si tenemos contenido que queremos leer
         self.content = ""
         self.title = ""
         self.link = ""
