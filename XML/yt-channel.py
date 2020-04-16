@@ -47,4 +47,3 @@ if __name__ == "__main__":
     ytparser.Parser.parse(xmlStream)
     page = PAGE.format(videos=ytparser.videos)
     print(page)
-

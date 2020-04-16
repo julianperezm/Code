@@ -29,8 +29,13 @@ class CounterHandler(ContentHandler):
             self.inContent = True
         elif name == 'end':
             self.inContent = True
+<<<<<<< HEAD
 
     def endElement(self, name):
+=======
+            
+    def endElement (self, name):
+>>>>>>> 1607e025e3778716cf4abdbabeee698c057762eb
         if name == 'joke':
             print()
         elif name == 'start':
