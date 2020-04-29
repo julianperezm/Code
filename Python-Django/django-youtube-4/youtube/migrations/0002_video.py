@@ -6,6 +6,7 @@ from django.db import migrations
 
 from ..ytchannel import YTChannel
 
+
 def read_channel(apps, schema_editor):
     # Note we need to import the model from the historical version,
     # to work well if it is later changed
