@@ -25,7 +25,11 @@ SECRET_KEY = '*eei#p(uwyj7zku9*pn(31fvqchs!b&tjq2z1199%br()3ti(q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = [`canary.pythonanywhere.com`]
+=======
+ALLOWED_HOSTS = ['canary.pythonanywhere.com']
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 
 # Application definition
 

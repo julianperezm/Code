@@ -6,6 +6,10 @@ te has creado una cuenta en él. También se ha modificado `settings.py`
 para añadir la instancia `canary.pythonanywhere.com` a la variable
 `ALLOWED_HOSTS`. En tu caso, tendrás que sustituir ese nombre por el
 nombre de tu instancia en PythonAnywhere.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 ## Despliegue en Python Anywhere
 
 Tendrás que haber creado una cuenta en Python Anywhere, y seleccionado
@@ -27,8 +31,11 @@ selecciona "Manual configuration", y luego "Python 3.7"
 (o la versión que corresponda con la que usaste en el
 entorno virtual que montaste).
 
+<<<<<<< HEAD
 ...
 
+=======
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 En este punto puedes comprobar que el sitio está arriba,
 con la configuración por defecto (un programa "Hello world"
 muy simple), cargando en tu navegador la url de tu 
@@ -36,6 +43,7 @@ instancia, normalmente http://"nombre".pythonanywhere.com
 (siendo `"nombre"` el nombre de tu instancia).
 
 En la pestaña "Web", busca el sitio donde se puede especificar
+<<<<<<< HEAD
 el entorno virtual, e indica el camino (path) al que
 creaste (en nuestro caso, `/home/"nombre"/.virtualenvs/code`)
 
@@ -44,6 +52,25 @@ normalmente /var/www/"nombre"_pythonanywhere_com_wsgi.py
 (siendo `"nombre"` el nombre de tu instancia). Edítalo,
 haciendo los siguientes cambios (ten en cuenta que es un
 fichero Python):
+=======
+el directorio con tu código (en la sección "Code"),
+y anota en él el directorio
+(tal y como has clonado el código en PythonAnywhere) en el que
+tienes tu proyecto Django. En nuestro caso,
+`/home/"nombre"/Code/Python-Django/django-youtube-4`,
+o el que corresponda a la versión de `django-youtube` que 
+quieras que se lance en tu instancia.
+Haz lo mismo para el "working directory" (tendrás que especificar
+el mismo directorio).
+
+En la pestaña "Web", busca el fichero de configuración WSGI,
+normalmente /var/www/"nombre"_pythonanywhere_com_wsgi.py
+(siendo `"nombre"` el nombre de tu instancia).
+Edítalo (para editarlo, puedes pulsar directamente sobre
+su nombre),
+haciendo los siguientes cambios
+(ten en cuenta que es un fichero Python).
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 
 * Comenta la función `application` (que es la función que
 produce la página web "Hello World" que has visto en tu
@@ -63,9 +90,20 @@ Esto lo pondrás en la asignación `os.environ['DJANGO_SETTINGS_MODULE']=`.
 
 Cuando hayas terminado, guarda el fichero (botón "Save", arriba a la derecha).
 
+<<<<<<< HEAD
 En el fichero `settings.py` del proyecto Django que va a servir tu instancia,
 añade el nombre de la instancia a `ALOWED_HOSTS`. La lista (que normalmente
 está vacía) te debería quedar así:
+=======
+En la pestaña "Web", busca el sitio donde se puede especificar
+el entorno virtual, e indica el camino (path) al que
+creaste (en nuestro caso, `/home/"nombre"/.virtualenvs/code`).
+
+En el fichero `settings.py` del proyecto Django que va a servir tu instancia,
+añade el nombre de la instancia a `ALOWED_HOSTS`.
+Para editarlo, puedes usar la pestaña "Files".
+La lista (que normalmente está vacía) te debería quedar así:
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 
 ```
 ALLOWED_HOSTS = ['canary.pythonanywhere.com']
@@ -87,6 +125,12 @@ PythonAnywhere por ti. Para que lo haga,
 en la pestaña "Web", relanza la aplicación de tu instancia
 (botón "Reload").
 
+<<<<<<< HEAD
+=======
+Ahora ya podrás visitar la url de tu instancia, y si todo ha ido bien,
+verás tu aplicación funcionando, contenta, en ella.
+
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
 ## Despliegue en tu propio ordenador
 
 Para hacer funcionar el programa en tu propio ordenador:
@@ -97,3 +141,12 @@ Para hacer funcionar el programa en tu propio ordenador:
 % python3 manage.py migrate
 % python3 manage.py runserver
 ```
+<<<<<<< HEAD
+=======
+
+## Documentación para el despliegue en PythonAnywhere
+
+* [PythonAnywhere Help Pages](https://help.pythonanywhere.com/pages/)
+* [Deploying a web app on PythonAnywheere](https://www.pythonanywhere.com/task_helpers/start/4-deploy-local-web-app/)
+* [Deploying an existing Django project on PythonAnywhere](https://help.pythonanywhere.com/pages/DeployExistingDjangoProject)
+>>>>>>> 4d23803cccd4e5e2c97ffa0a7d8e665c67d8e485
